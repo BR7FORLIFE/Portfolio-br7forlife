@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.li-style{
+    @apply border-2 border-transparent px-3 py-0.5 rounded-full hover:border-red-500 hover:text-red-500 transition-all duration-300 ease-in-out;
+}
