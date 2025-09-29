@@ -1,23 +1,85 @@
 ---
-import "@fontsource-variable/nunito-sans";
+// Supports weights 400-900
+import "@fontsource-variable/orbitron";
 import "../styles/global.css";
+
+import Header from "../components/Header.astro";
+
+const { title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>BR7FORLIFE - PORTFOLIO</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>BR7FORLIFE - {title}</title>
+  </head>
+  <body class="w-screen h-screen bg-black text-white">
+    <!-- <div class="glow"></div>
+    <div class="glowdown"></div> -->
+    <Header />
+    <main>
+      <slot />
+    </main>
+  </body>
 </html>
 
 <style>
-	:root{
-		background-color: #e7e7e7;
-	}
+  body {
+    font-family: "Orbitron Variable", sans-serif;
+  }
+  /* .glow {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 250%;
+    height: 250%;
+    background: radial-gradient(
+      circle,
+      rgba(220, 76, 76, 0.521),
+      transparent 60%
+    );
+    filter: blur(100px);
+    animation: moveGlow 8s linear infinite;
+    z-index: 0;
+  }
+
+  @keyframes moveGlow {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    50% {
+      transform: translate(90%, 90%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+
+  .glowdown {
+    position: fixed;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background: radial-gradient(
+      circle,
+      rgba(90, 184, 255, 0.5),
+      transparent 70%
+    );
+    filter: blur(120px);
+    animation: moveGlowDown 8s linear infinite;
+    z-index: 0;
+  }
+
+  @keyframes moveGlowDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  } */
 </style>
