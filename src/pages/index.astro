@@ -1,10 +1,120 @@
 ---
-import Layout from "layouts/Layout.astro";
+// Supports weights 100-900
+import "@fontsource-variable/league-spartan";
+import Layout from "../layouts/Layout.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+interface Phrases {
+  paragraph: string;
+}
+
+const phrases: Phrases[] = [
+  {
+    paragraph:
+      "Un camino extenuante e increible, que sigue abriendose frente a mi, llenos de retos y creaciones por descubrir.",
+  },
+  {
+    paragraph:
+      "Si conocieramos la belleza de plasmar una buena idea, no tendriamos que replantearla muchas veces.",
+  },
+];
 ---
 
-<Layout>
+<Layout title="home">
+  <section
+    class="w-full h-auto flex flex-row justify-evenly items-center mt-12 animate-fade-in-down"
+  >
+    <article class="inline-flex flex-col gap-12">
+      {
+        phrases.map(({ paragraph }) => {
+          return (
+            <div class="flex text-center w-72 h-auto transform hover:scale-125 duration-500 delay-75 ease-in-out">
+              <span class="text-5xl text-[#ab1644]">"</span>
+              <p class="text-xl">{paragraph}</p>
+              <span class="text-5xl text-[#ab1644]">"</span>
+            </div>
+          );
+        })
+      }
+    </article>
+    <article class="flex flex-col justify-center items-center gap-10">
+      <div class="flex flex-col gap-2 justify-center items-center">
+        <span class="text-sm font-semibold">Video de presentación</span>
+        <img src="assets/play-button.png" alt="play icon" class="size-14 opacity" />
+      </div>
+      <div>
+        <p class="text-4xl text-center">
+          Me presento<br /><span class="word text-center font-semibold"
+            >Brayan Andrés Díaz Pacheco</span
+          ><br />¡Soy! <span class="word text-center font-semibold"
+            >Desarrollador Fullstack</span
+          >
+        </p>
+      </div>
+    </article>
 
+    <picture>
+      <img
+        src="https://b2472105.smushcdn.com/2472105/wp-content/uploads/2023/01/Perfil-Profesional-_63-819x1024.jpg?lossy=1&strip=1&webp=1"
+        alt="image"
+        class="w-72 h-auto rounded-full shadow-2xl hover:scale-105 transition-transform duration-300"
+      />
+    </picture>
+  </section>
+
+  <section class="w-full h-auto flex justify-center items-center">
+    <div class="relative inline-flex group pulse">
+      <div
+        class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"
+      >
+      </div>
+      <a
+        href="#"
+        title="Get quote now"
+        class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+        role="button"
+        >Descarga mi CV aquí
+      </a>
+    </div>
+  </section>
 </Layout>
+
+<style>
+  section {
+    font-family: "League Spartan Variable", sans-serif;
+  }
+
+  .word {
+    font-family: "Orbitron Variable", sans-serif;
+    color: #ab1644;
+  }
+
+  @keyframes pulseCustom {
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.9;
+    }
+  }
+
+  @keyframes opacityCustom {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  .pulse {
+    animation: pulseCustom 2s ease-in-out infinite;
+  }
+
+  .opacity {
+    animation: opacityCustom 2s ease-in-out infinite;
+  }
+</style>
