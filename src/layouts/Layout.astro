@@ -3,22 +3,25 @@
 import "@fontsource-variable/orbitron";
 import "../styles/global.css";
 
-import Header from "../components/Header.astro";
+import Header from "@Sections/Header.astro";
+
+import { ClientRouter } from "astro:transitions";
 
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>BR7FORLIFE - {title}</title>
+    <ClientRouter />
   </head>
-  <body class="w-screen h-screen bg-black text-white">
-    <!-- <div class="glow"></div>
-    <div class="glowdown"></div> -->
+  <body class="w-screen h-screen bg-black text-white overflow-x-hidden">
+    <div class="glow"></div>
+    <div class="glowdown"></div>
     <Header />
     <main>
       <slot />
@@ -27,35 +30,9 @@ const { title } = Astro.props;
 </html>
 
 <style>
+
   body {
     font-family: "Orbitron Variable", sans-serif;
-  }
-  /* .glow {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 250%;
-    height: 250%;
-    background: radial-gradient(
-      circle,
-      rgba(220, 76, 76, 0.521),
-      transparent 60%
-    );
-    filter: blur(100px);
-    animation: moveGlow 8s linear infinite;
-    z-index: 0;
-  }
-
-  @keyframes moveGlow {
-    0% {
-      transform: translate(0%, 0%);
-    }
-    50% {
-      transform: translate(90%, 90%);
-    }
-    100% {
-      transform: translate(0%, 0%);
-    }
   }
 
   .glowdown {
@@ -66,7 +43,7 @@ const { title } = Astro.props;
     height: 200%;
     background: radial-gradient(
       circle,
-      rgba(90, 184, 255, 0.5),
+      rgba(254, 49, 49, 0.5),
       transparent 70%
     );
     filter: blur(120px);
@@ -81,5 +58,5 @@ const { title } = Astro.props;
     100% {
       transform: translateY(100%);
     }
-  } */
+  }
 </style>
