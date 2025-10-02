@@ -24,10 +24,38 @@ interface SocialMediaImages {
 
 export interface SocialMediaAnchors {
     href: string;
-    images: SocialMediaImages
+    images: SocialMediaImages;
 }
 
 // main.astro
 export interface Phrases {
     paragraph: string;
+}
+
+//Project.astro
+
+interface ImageLanguageProgramming {
+    src: string;
+    alt: string;
+    className: string;
+}
+
+interface ProjectLanguajeProgramming {
+    id: number;
+    nameProyect: string;
+    links: string[];
+    video?: string;
+}
+
+interface StructureLanguajeProgramming {
+    id: number;
+    nameLanguaje: string;
+    image: ImageLanguageProgramming;
+    projects: ProjectLanguajeProgramming;
+}
+
+export interface GroupLanguajeProgramming {
+    id: number;
+    nameGroup: string;
+    languajes: StructureLanguajeProgramming[]
 }

@@ -1,6 +1,6 @@
 ---
-import { navBar } from "@Utils/constants/contants";
 import { socialMediaAnchors } from "@Utils/constants/contants";
+import Navbar from "../components/NavBar";
 ---
 
 <header class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-lg">
@@ -14,13 +14,7 @@ import { socialMediaAnchors } from "@Utils/constants/contants";
     </div>
     <nav>
       <ul class="flex flex-row gap-6">
-        {
-          navBar.map(({ id, label }) => (
-            <li class="animation">
-              <a href={id}>{label}</a>
-            </li>
-          ))
-        }
+        <Navbar />
       </ul>
     </nav>
     <div class="inline-flex flex-row justify-center items-center gap-4">

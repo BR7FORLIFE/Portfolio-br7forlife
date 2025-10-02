@@ -1,5 +1,6 @@
 import type {
     StructureExperience,
+    GroupLanguajeProgramming,
     NavBar,
     Phrases,
     SocialMediaAnchors,
@@ -88,3 +89,8 @@ export const phrases: Phrases[] = [
             "Me gusta aprender desde la base, entendiendo cómo y por qué funciona la tecnología, soy persistente hasta dominar su uso y disfruto compartir lo aprendido.",
     },
 ];
+
+// Project.astro
+
+// - 
+//export const groupLanguaje: GroupLanguajeProgramming = []

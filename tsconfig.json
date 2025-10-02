@@ -10,12 +10,26 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@Components/*": ["src/components/*"],
-      "@Layouts/*": ["src/layouts/*"],
-      "@Pages/*": ["src/pages/*"],
-      "@Sections/*": ["src/sections/*"],
-      "@Utils/*": ["src/utils/*"],
-      "@Styles/*": ["src/styles/*"]
-    }
+      "@Components/*": [
+        "src/components/*"
+      ],
+      "@Layouts/*": [
+        "src/layouts/*"
+      ],
+      "@Pages/*": [
+        "src/pages/*"
+      ],
+      "@Sections/*": [
+        "src/sections/*"
+      ],
+      "@Utils/*": [
+        "src/utils/*"
+      ],
+      "@Styles/*": [
+        "src/styles/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }
