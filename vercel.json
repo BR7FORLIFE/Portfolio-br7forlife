@@ -1,0 +1,7 @@
+{
+    "git": {
+    "deploymentEnabled": {
+      "1.1": false
+    }
+  }
+}
