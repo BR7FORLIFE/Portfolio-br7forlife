@@ -51,7 +51,7 @@ interface StructureLanguajeProgramming {
     id: number;
     nameLanguaje: string;
     image: ImageLanguageProgramming;
-    projects: ProjectLanguajeProgramming;
+    projects: ProjectLanguajeProgramming[];
 }
 
 export interface GroupLanguajeProgramming {

@@ -43,7 +43,7 @@ export const structureExperience: StructureExperience[] = [
 export const navBar: NavBar[] = [
     { id: "#home", label: "Home" },
     { id: "#experience", label: "Experience" },
-    { id: "#Ppoject", label: "Project" },
+    { id: "#Projects", label: "Project" },
     { id: "#skills", label: "Skills" },
     { id: "#education", label: "Education" },
     { id: "#contact", label: "Contact" },
@@ -92,5 +92,86 @@ export const phrases: Phrases[] = [
 
 // Project.astro
 
-// - 
-//export const groupLanguaje: GroupLanguajeProgramming = []
+// -
+export const groupLanguaje: GroupLanguajeProgramming[] = [
+    {
+        id: 1,
+        nameGroup: "Backend",
+        languajes: [
+            {
+                id: 1,
+                nameLanguaje: "Spring Web",
+                image: {
+                    src: "assets/spring-icon.png",
+                    alt: "Spring web icon",
+                    className: "",
+                },
+                projects: [
+                    {
+                        id: 1,
+                        nameProyect: "Spring Example Controllers-valid",
+                        links: [],
+                        video: "",
+                    },
+                ],
+            },
+            {
+                id: 2,
+                nameLanguaje: "Spring Security",
+                image: { src: "", alt: "", className: "" },
+                projects: [{ id: 1, nameProyect: "", links: [], video: "" }],
+            },
+            {
+                id: 3,
+                nameLanguaje: "Spring Data",
+                image: { src: "", alt: "", className: "" },
+                projects: [{ id: 1, nameProyect: "", links: [], video: "" }],
+            },
+            {
+                id: 4,
+                nameLanguaje: "Spring Test",
+                image: { src: "", alt: "", className: "" },
+                projects: [{ id: 1, nameProyect: "", links: [], video: "" }],
+            },
+        ],
+    },
+    {
+        id: 2,
+        nameGroup: "Frontend",
+        languajes: [
+            {
+                id: 1,
+                nameLanguaje: "",
+                image: { src: "", alt: "", className: "" },
+                projects: [
+                    {
+                        id: 1,
+                        nameProyect: "",
+                        links: [],
+                        video: "",
+                    },
+                ],
+            },
+        ],
+    },
+
+    {
+        id: 3,
+        nameGroup: "Databases",
+        languajes: [
+            {
+                id: 1,
+                nameLanguaje: "",
+                image: { src: "", alt: "", className: "" },
+                projects: [
+                    {
+                        id: 1,
+                        nameProyect: "",
+                        links: [],
+                        video: "",
+                    },
+                ],
+            },
+        ],
+    },
+];
