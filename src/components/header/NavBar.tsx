@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NavBarItem from '@Components/NavBarItem'
+import NavBarItem from '@Components/header/NavBarItem'
 import { navBar } from '@Utils/constants/contants'
 
 function Navbar(){
