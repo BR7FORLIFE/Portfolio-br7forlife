@@ -1,0 +1,68 @@
+---
+import Spring from "@Assets/LanguajesProgrammingIcons/Spring.astro";
+import Angular from "@Assets/LanguajesProgrammingIcons/Angular.astro";
+import AstroIcon from "@Assets/LanguajesProgrammingIcons/AstroIcon.astro";
+import Css from "@Assets/LanguajesProgrammingIcons/Css.astro";
+import Docker from "@Assets/LanguajesProgrammingIcons/Docker.astro";
+import Git from "@Assets/LanguajesProgrammingIcons/Git.astro";
+import Github from "@Assets/LanguajesProgrammingIcons/Github.astro";
+import Html from "@Assets/LanguajesProgrammingIcons/Html.astro";
+import Java from "@Assets/LanguajesProgrammingIcons/Java.astro";
+import Javascript from "@Assets/LanguajesProgrammingIcons/Javascript.astro";
+import Linux from "@Assets/LanguajesProgrammingIcons/Linux.astro";
+import MongoDB from "@Assets/LanguajesProgrammingIcons/MongoDB.astro";
+import Mysql from "@Assets/LanguajesProgrammingIcons/Mysql.astro";
+import Postgresql from "@Assets/LanguajesProgrammingIcons/Postgresql.astro";
+import React from "@Assets/LanguajesProgrammingIcons/React.astro";
+import Tailwind from "@Assets/LanguajesProgrammingIcons/Tailwind.astro";
+
+const icons = [
+  { name: "Spring", component: Spring, className: "w-12" },
+  { name: "Java", component: Java, className: "w-12" },
+  { name: "Angular", component: Angular, className: "w-12" },
+  { name: "Astro", component: AstroIcon, className: "w-12" },
+  { name: "React", component: React, className: "w-12" },
+  { name: "CSS", component: Css, className: "w-12" },
+  { name: "Tailwind", component: Tailwind, className: "w-12" },
+  { name: "HTML", component: Html, className: "w-12" },
+  { name: "JavaScript", component: Javascript, className: "w-12" },
+  { name: "Docker", component: Docker, className: "w-12" },
+  { name: "Git", component: Git, className: "w-12" },
+  { name: "GitHub", component: Github, className: "w-12" },
+  {
+    name: "Linux",
+    component: Linux,
+    className: "w-12 stroke-white stroke-[2]",
+  },
+  { name: "MongoDB", component: MongoDB, className: "w-7" },
+  { name: "MySQL", component: Mysql, className: "w-12" },
+  { name: "PostgreSQL", component: Postgresql, className: "w-12" },
+];
+---
+
+<section
+  id="skills"
+  class="relative w-screen h-screen flex flex-col justify-center items-center gap-8 z-10"
+>
+  <h2 class="text-3xl font-semibold">Skills</h2>
+  <article class="grid grid-cols-4 gap-5">
+    {
+      icons.map(({ name, component, className }) => {
+        const IconComponent = component;
+
+        return (
+          <div class="flex flex-col justify-center items-center gap-2 transition-transform hover:scale-125 ease-in-out duration-500">
+            <IconComponent class:list={`${className}`} />
+            <span class="text-center text-xl font-semibold">{name}</span>
+          </div>
+        );
+      })
+    }
+  </article>
+</section>
+
+<style>
+  div {
+    font-family: "League Spartan Variable", sans-serif;
+  }
+</style>
