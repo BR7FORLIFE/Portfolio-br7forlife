@@ -1,11 +1,6 @@
 ---
-// Supports weights 400-900
 import "@fontsource-variable/orbitron";
 import "../styles/global.css";
-
-import Header from "@Sections/Header.astro";
-
-import { ClientRouter } from "astro:transitions";
 
 const { title } = Astro.props;
 ---
@@ -17,46 +12,27 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>BR7FORLIFE - {title}</title>
-    <ClientRouter />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="w-screen h-screen bg-black text-white overflow-x-hidden">
-    <div class="glow"></div>
-    <div class="glowdown"></div>
-    <Header />
-    <main>
-      <slot />
-    </main>
+
+  <body class="bg-black text-white min-h-screen">
+    <div class="fixed inset-0 -z-10 bg-slate-950">
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"
+      >
+      </div>
+    </div>
+    <slot />
   </body>
 </html>
-
-<style>
-
-  body {
-    font-family: "Orbitron Variable", sans-serif;
-  }
-
-  .glowdown {
-    position: fixed;
-    top: -50%;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    background: radial-gradient(
-      circle,
-      rgba(254, 49, 49, 0.5),
-      transparent 70%
-    );
-    filter: blur(120px);
-    animation: moveGlowDown 8s linear infinite;
-    z-index: 0;
-  }
-
-  @keyframes moveGlowDown {
-    0% {
-      transform: translateY(-100%);
-    }
-    100% {
-      transform: translateY(100%);
-    }
-  }
-</style>
