@@ -2,7 +2,11 @@
 @plugin "@midudev/tailwind-animations";
 
 
-.animation{
-    @apply transition-transform hover:scale-125 duration-300 delay-75 ease-in-out;
+
+.principal {
+  font-family: "Science Gothic", sans-serif;
 }
 
+.secondary {
+  font-family: "Nunito", sans-serif;
+}
