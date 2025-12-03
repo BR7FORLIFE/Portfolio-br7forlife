@@ -1,17 +1,14 @@
 ---
 // Supports weights 100-900
 import Layout from "@Layouts/Layout.astro";
-import Main from "@Sections/Main.astro";
-import Experience from "@Sections/Experience.astro";
-import Project from "@Sections/Project.astro";
-import Skills from "@Sections/Skills.astro";
+import MainLayout from "@Layouts/MainLayout.astro"
+import MarkAside from "@Sections/MarkAside.astro";
+
 ---
 
 <Layout title="home">
-  <Main />
-  <Experience/>
-  <Project />
-  <Skills/>
+  <MarkAside />
+  <MainLayout></MainLayout>
 </Layout>
 
 <style></style>
