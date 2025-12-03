@@ -1,0 +1,117 @@
+---
+const resume = [
+  "1+ Años Experiencia",
+  "SDLC",
+  "API REST",
+  "Bases de datos",
+  "DevOps",
+];
+
+// Icons
+import Spring from "@Assets/spring.svg";
+import NodeJS from "@Assets/nodejs.svg";
+import Angular from "@Assets/angular.svg";
+import ReactIcon from "@Assets/react.svg";
+import AstroIcon from "@Assets/astro.svg";
+import TailwindCSS from "@Assets/tailwind.svg";
+import Bootstrap from "@Assets/bootstrap.svg";
+import Postgresql from "@Assets/postgres.svg";
+import Mysql from "@Assets/mysql.svg";
+import Mongo from "@Assets/mongo.svg";
+
+const skills = {
+  Backend: [
+    { Icon: Spring, class: "w-20 h-auto" },
+    { Icon: NodeJS, class: "mb-2" },
+  ],
+  Frontend: [
+    { Icon: Angular, class: "w-10 h-auto" },
+    { Icon: ReactIcon, class: "w-10 h-auto" },
+    { Icon: AstroIcon, class: "w-10 h-auto" },
+    { Icon: TailwindCSS, class: "w-10 h-auto" },
+    { Icon: Bootstrap, class: "w-10 h-auto" },
+  ],
+  "Bases de Datos": [
+    { Icon: Postgresql, class: "w-12 h-auto" },
+    { Icon: Mysql, class: "w-12 h-auto" },
+    { Icon: Mongo, class: "w-12 h-auto" },
+  ],
+  DevOps: [],
+};
+---
+
+<main class="relative w-full min-h-screen p-10">
+  <div class="inline-flex flex-col items-start">
+    <h1 class="principal text-6xl md:text-7xl">
+      DIAZ PACHECO <br />BRYAN
+    </h1>
+
+    <span class="principal text-xl text-[#83fd71]">
+      Desarrollador De Software
+    </span>
+  </div>
+
+  <section class="mt-10">
+    <h1 class="principal text-3xl mb-4">Resumen</h1>
+    <div
+      class="inline-flex flex-col items-start gap-1 text-neutral-200 secondary font-semibold"
+    >
+      {resume.map((item) => <span>{item}</span>)}
+    </div>
+  </section>
+
+  <section class="flex flex-col gap-4 justify-center items-start mt-12">
+    <h1 class="principal text-3xl mb-4">Educación</h1>
+    <div class="inline-flex flex-row gap-4">
+      <img
+        src="https://www.casewaresa.com.co/media/iconos/unnamed.png"
+        alt="icono del tecnologico comfenalco"
+        class="w-10 h-auto object-cover"
+      />
+      <span
+        >Fundacion Universitaria Técnologico Comfenalco <br /><span
+          class="text-sm">Ingenieria Sistemas</span
+        ></span
+      >
+    </div>
+    <div class="inline-flex flex-row gap-4">
+      <img
+        src="https://images.seeklogo.com/logo-png/35/2/sena-logo-png_seeklogo-354459.png"
+        alt="icono del sena"
+        class="w-10 h-auto object-cover"
+      />
+      <span>Sena Sofia <br /><span class="text-sm">Ingles B2</span></span>
+    </div>
+  </section>
+
+  <section class="absolute mt-10 right-5 bottom-0">
+    <h1 class="principal text-3xl mb-4">Habilidades</h1>
+
+    {
+      Object.entries(skills).map(([category, items]) => (
+        <article class="mb-6">
+          <span class="secondary font-bold text-lg">{category}</span>
+
+          <div class="flex flex-row flex-wrap items-center gap-4 mt-2">
+            {items.map(({ Icon, class: cls }) => (
+              <Icon class={cls} />
+            ))}
+
+            {items.length === 0 && (
+              <span class="text-neutral-500 secondary">Próximamente…</span>
+            )}
+          </div>
+        </article>
+      ))
+    }
+  </section>
+
+  <a
+    href="assets/documents/hoja.pdf"
+    title="curriculum"
+    target="_blank"
+    class="fixed bottom-0 inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 button-cv"
+    role="button"
+    >Descarga mi CV aquí
+  </a>
+</main>
