@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme{
+    --font-permanent: "Permanent Marker", cursive;
+    --font-Geist: "Geist Mono", monospace;
+}
