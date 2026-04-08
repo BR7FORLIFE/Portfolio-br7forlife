@@ -40,6 +40,19 @@ const projects = [
             web: ''
         }
     },
+    {
+        image: {
+            img: './projects/kafka-ollama.png',
+            alt: 'imagen del proyecto kafka ollama'
+        },
+        topics: ['Spring', 'Ollama', 'Kafka', 'WebSockets', 'Backend'],
+        title: 'ChatBot con IA con cola de mensajes',
+        description: 'Aplicación backend reactiva que utiliza WebSockets para comunicación en tiempo real y Apache Kafka como sistema de mensajería distribuida, permitiendo procesar solicitudes de chat de forma desacoplada, escalable y resiliente con un modelo en local de ollama.',
+        link: {
+            github: 'https://github.com/BR7FORLIFE/BackendProjects/tree/main/IA-Websockets',
+            web: ''
+        }
+    },
 ]
 
 function Projects(){
