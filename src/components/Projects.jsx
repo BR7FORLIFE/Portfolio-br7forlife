@@ -11,7 +11,7 @@ const projects = [
         description: 'Un proyecto reactivo en spring que desarrolla un modelo de negocio e-commerce, con diseño de distemas escalables y distribuido.',
         link: {
             github: 'https://github.com/BR7FORLIFE/BR7-MARKETPLACE-BACKEND',
-            web: ''
+            web: 'https://br7-marketplace-backend.onrender.com/api/status'
         }
     },
     {
