@@ -53,6 +53,19 @@ const projects = [
             web: ''
         }
     },
+    {
+        image: {
+            img: './projects/br7-marketplace-frontend.png',
+            alt: 'imagen del frontend de marketplace'
+        },
+        topics: ['React', 'React-router', 'TanstackQuery', 'TailwindV4', 'Arquitecture Patterns'],
+        title: 'E-Commerce BR7-FRONTEND',
+        description: 'Aplicación en el ecosistema React que demuestra buenas practicas de arquitectura y flujos de eventos, además de la importancia de UX/UI y como los datos viajan en toda la aplicación',
+        link: {
+            github: 'https://github.com/BR7FORLIFE/BR7-MARKETPLACE-FRONTEND',
+            web: 'https://br7marketplace.netlify.app/'
+        }
+    },
 ]
 
 function Projects(){

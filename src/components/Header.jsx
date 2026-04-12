@@ -44,9 +44,13 @@ function Header() {
                         className="w-7 h-auto opacity-70 hover:opacity-100 transition"
                     />
 
-                    <button className="px-4 py-2 text-sm font-permanent border border-neutral-300 rounded-lg hover:border-black hover:bg-black hover:text-white transition-all duration-300">
+                    <a 
+                    href="/Fullstack-abril.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 text-sm font-permanent border border-neutral-300 rounded-lg hover:border-black hover:bg-black hover:text-white transition-all duration-300">
                         Resume
-                    </button>
+                    </a>
                 </div>
 
             </div>
