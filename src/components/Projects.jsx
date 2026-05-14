@@ -33,7 +33,20 @@ const projects = [
             alt: 'imagen del proyecto districore'
         },
         topics: ['Spring', 'DevOps', 'Clean Code', 'Cloud', 'Backend'],
-        title: 'DISTRICORE',
+        title: 'DISTRICORE - BACKEND',
+        description: 'Una inciativa para ayudar a las grandes y medianas distribuidoras para su flujo de negocios. Como lo es el manejo de preventistas, pedidos, rutas y tiendas, de una forma centralizada y escalable.',
+        link: {
+            github: 'https://github.com/BR7FORLIFE/Backend-Districore',
+            web: ''
+        }
+    },
+    {
+        image: {
+            img: './projects/districore-frontend.png',
+            alt: 'imagen del proyecto districore'
+        },
+        topics: ['React', 'Router', 'Google Maps', 'Cloud'],
+        title: 'DISTRICORE - FRONTEND',
         description: 'Una inciativa para ayudar a las grandes y medianas distribuidoras para su flujo de negocios. Como lo es el manejo de preventistas, pedidos, rutas y tiendas, de una forma centralizada y escalable.',
         link: {
             github: '',
