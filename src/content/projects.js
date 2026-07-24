@@ -1,30 +1,54 @@
 export const projects = [
   {
     image: {
-      img: "./projects/br7-marketplace.png",
-      alt: "imagen del proyecto backend marketplace",
+      img: "./projects/rent-logo.png",
+      alt: "imagen del proyecto backend rent",
     },
-    topics: ["Flux", "Security", "Reactive", "Spring", "Backend"],
-    title: "BR7-MARKETPLACE-BACKEND",
+    topics: [
+      "Microservicios",
+      "Gateway",
+      "Databases",
+      "Docker",
+      "Events and more",
+    ],
+    title: "RENT BACKEND",
     description:
-      "Un proyecto reactivo en spring que desarrolla un modelo de negocio e-commerce, con diseño de distemas escalables y distribuido.",
+      "Software de administracion de Arrendamiento, Proporcionando modulos de Gestión Financiera, Documental, Comunicación, Tickets, Portal de arrendatarios, y Sistemas de pagos ",
     link: {
-      github: "https://github.com/BR7FORLIFE/BR7-MARKETPLACE-BACKEND",
-      web: "https://br7-marketplace-backend.onrender.com/api/status",
+      github: "https://github.com/BR7FORLIFE/RENT-BACKEND",
     },
   },
   {
     image: {
-      img: "./projects/la-fragancia.png",
-      alt: "imagen del proyecto la fragancia",
+      img: "./projects/IA-agent.png",
+      alt: "imagen del proyecto backend agent IA",
     },
-    topics: ["Production", "Frontend", "Astro", "Business Logic"],
-    title: "La fragancia JM",
+    topics: ["Spring IA", "Observabilidad", "Memoria", "tools", "Events"],
+    title: "Agente de IA con spring IA + Memoria",
     description:
-      "Una Landing Page para un cliente para mostrar sus perfumes. Hecha con Astro y implementacion con las nuevas tecnologias como los Astro collections.",
+      "Proyecto en Spring IA, donde se aplican conceptos como: busquedas de modelos con adaptaciones a herramientas, un sistema basado en eventos, capa de persistencia y Observabilidad para mejor trazabilidad del proyecto",
     link: {
-      github: "https://github.com/BR7FORLIFE/lafraganciajm",
-      web: "https://lafragancia.store/es",
+      github:
+        "https://github.com/BR7FORLIFE/BackendProjects/tree/main/Agents-Scheduling-MCP",
+    },
+  },
+  {
+    image: {
+      img: "./projects/rent-logo.png",
+      alt: "imagen del proyecto frontend rent",
+    },
+    topics: [
+      "React Native",
+      "TanstackQuery",
+      "Async Storage",
+      "Cloudinary",
+      "Maps",
+    ],
+    title: "RENT FRONTEND",
+    description:
+      "Software de administracion de Arrendamiento, Proporcionando modulos de Gestión Financiera, Documental, Comunicación, Tickets, Portal de arrendatarios, y Sistemas de pagos ",
+    link: {
+      github: "https://github.com/BR7FORLIFE/RENT-FRONTEND",
     },
   },
   {
@@ -38,20 +62,6 @@ export const projects = [
       "Una inciativa para ayudar a las grandes y medianas distribuidoras para su flujo de negocios. Como lo es el manejo de preventistas, pedidos, rutas y tiendas, de una forma centralizada y escalable.",
     link: {
       github: "https://github.com/BR7FORLIFE/Backend-Districore",
-      web: "",
-    },
-  },
-  {
-    image: {
-      img: "./projects/districore-frontend.png",
-      alt: "imagen del proyecto districore",
-    },
-    topics: ["React", "Router", "Google Maps", "Cloud"],
-    title: "DISTRICORE - FRONTEND",
-    description:
-      "Una inciativa para ayudar a las grandes y medianas distribuidoras para su flujo de negocios. Como lo es el manejo de preventistas, pedidos, rutas y tiendas, de una forma centralizada y escalable.",
-    link: {
-      github: "",
       web: "",
     },
   },
@@ -72,6 +82,34 @@ export const projects = [
   },
   {
     image: {
+      img: "./projects/la-fragancia.png",
+      alt: "imagen del proyecto la fragancia",
+    },
+    topics: ["Production", "Frontend", "Astro", "Business Logic"],
+    title: "La fragancia JM",
+    description:
+      "Una Landing Page para un cliente para mostrar sus perfumes. Hecha con Astro y implementacion con las nuevas tecnologias como los Astro collections.",
+    link: {
+      github: "https://github.com/BR7FORLIFE/lafraganciajm",
+      web: "https://lafragancia.store/es",
+    },
+  },
+  {
+    image: {
+      img: "./projects/br7-marketplace.png",
+      alt: "imagen del proyecto backend marketplace",
+    },
+    topics: ["Flux", "Security", "Reactive", "Spring", "Backend"],
+    title: "BR7-MARKETPLACE-BACKEND",
+    description:
+      "Un proyecto reactivo en spring que desarrolla un modelo de negocio e-commerce, con diseño de distemas escalables y distribuido.",
+    link: {
+      github: "https://github.com/BR7FORLIFE/BR7-MARKETPLACE-BACKEND",
+      web: "https://br7-marketplace-backend.onrender.com/api/status",
+    },
+  },
+  {
+    image: {
       img: "./projects/br7-marketplace-frontend.png",
       alt: "imagen del frontend de marketplace",
     },
@@ -87,7 +125,20 @@ export const projects = [
       "Aplicación en el ecosistema React que demuestra buenas practicas de arquitectura y flujos de eventos, además de la importancia de UX/UI y como los datos viajan en toda la aplicación",
     link: {
       github: "https://github.com/BR7FORLIFE/BR7-MARKETPLACE-FRONTEND",
-      web: "https://br7marketplace.netlify.app/",
+    },
+  },
+  {
+    image: {
+      img: "./projects/districore-frontend.png",
+      alt: "imagen del proyecto districore",
+    },
+    topics: ["React", "Router", "Google Maps", "Cloud"],
+    title: "DISTRICORE - FRONTEND",
+    description:
+      "Una inciativa para ayudar a las grandes y medianas distribuidoras para su flujo de negocios. Como lo es el manejo de preventistas, pedidos, rutas y tiendas, de una forma centralizada y escalable.",
+    link: {
+      github: "",
+      web: "",
     },
   },
 ];
