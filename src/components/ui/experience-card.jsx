@@ -1,7 +1,6 @@
 export function ExperienceCard({
   title,
   organization,
-  date,
   descriptions = [],
 }) {
   return (
@@ -21,9 +20,7 @@ export function ExperienceCard({
               {organization}
             </span>
           </div>
-          <span className="text-xs font-medium text-neutral-400 sm:text-right sm:pt-1">
-            {date}
-          </span>
+          
         </div>
         
         <ul className="flex flex-col gap-3">

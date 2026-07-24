@@ -42,7 +42,7 @@ function Header() {
           />
           <div className="relative h-auto group">
             <a
-              href="/Fullstack-abril.pdf"
+              href="/HV-fullstack-2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 text-sm font-permanent border border-neutral-300 rounded-lg hover:border-black hover:bg-black hover:text-white transition-all duration-300 bg-white"
