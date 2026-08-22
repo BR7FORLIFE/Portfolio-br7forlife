@@ -1,6 +1,25 @@
 export const projects = [
   {
     image: {
+      img: "./projects/trading-analytics.png",
+      alt: "imagen del proyecto trading analytics platform",
+    },
+    topics: [
+      "Scrapping",
+      "Cron",
+      "Databases",
+      "Docker",
+      "Dashboard",
+    ],
+    title: "Trading analytics platform",
+    description:
+      "Un proyecto que ayuda a los traders a mejorar en sus analisis institucionales, recopilando informacion de los principales indicadores y además mostrandolo de manera correcta para mejores conclusiones",
+    link: {
+      github: "https://github.com/BR7FORLIFE/Trading-analytics-platform",
+    },
+  },
+  {
+    image: {
       img: "./projects/rent-logo.png",
       alt: "imagen del proyecto backend rent",
     },
